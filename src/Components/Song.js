@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-class Song extends React.Components {
+class Song extends React.Component {
+  componentDidMount() {
+    //set state to playing song
+  }
+
   render() {
     return (
       <audio
-        autoplay="true"
-        src={"/Sound/" + this.props.name.split(" ").join("_") + ".wav"}
+        //false
+        src={"/Sound/Songs/" + this.props.name.split(" ").join("_") + ".mp3"}
       />
     );
   }

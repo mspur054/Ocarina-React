@@ -1,0 +1,56 @@
+/* @require './_*.styl' */
+html,
+body {
+  height: 100%;
+  background-color: #add8e6;
+}
+.App {
+  margin: 0;
+}
+.songManager {
+  display: flex;
+}
+padding-top: 20px {
+  flex-direction: row;
+}
+hr {
+/*display: block*/
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  flex-grow: 1;
+}
+.musicTemplate {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+}
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: "";
+  display: inline-block;
+  height: 1.5em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 1.5em;
+  flex-basis: 10%;
+}
+.chevron.right:before {
+  left: 60px;
+  transform: rotate(45deg);
+}
+.chevron.bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.chevron.left:before {
+  left: -60px;
+  transform: rotate(-135deg);
+}

@@ -12,16 +12,17 @@ class Button extends React.Component {
     this.audio = new Audio(this.url);
     this.playSound = this.playSound.bind(this);
     this.keyPress = this.keyPress.bind(this);
+    this.image = "";
   }
 
-  playSound() {
-    // if (this.state.busy === false) {
-    this.setState({ play: !this.state.play, busy: true });
-    //console.log(this.state.play);
-    this.state.play ? this.audio.play() : this.audio.pause();
-    console.log(this.audio.ended);
-    // }
-  }
+  // playSound() {
+  //   // if (this.state.busy === false) {
+  //   this.setState({ play: !this.state.play, busy: true });
+  //   //console.log(this.state.play);
+  //   this.state.play ? this.audio.play() : this.audio.pause();
+  //   console.log(this.audio.ended);
+  //   // }
+  // }
 
   keyPress(event) {
     let myKey = event.key;
