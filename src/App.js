@@ -27,22 +27,29 @@ class App extends Component {
   }
 
   listenToKeys = event => {
-    console.log(event.keyCode);
+    //console.log(event.keyCode);
     const notes = this.state.currentSong.notes;
+    const keyCode = parseInt(event.keyCode);
+    console.log(notes[this.state.keyPosition] + "  " + keyCode);
     //Check if keycode is in song, if so play sound
-    return notes.includes(parseInt(event.keyCode))
-      ? this.playKey(parseInt(event.keyCode))
-      : null;
+    return notes[this.state.keyPosition] === keyCode //notes.includes(keyCode) && notes[this.state.keyPosition] === keyCode
+      ? this.playKey(keyCode)
+      : null; //TODO: make play bad sound and reset key
   };
 
   updateKeyPosition(bool) {}
 
   playKey(key) {
-    console.log(key + "1");
+    // Get current key position and increment it
+    const keyPosition = this.state.keyPosition + 1;
+    //Get audio element that correspond to key to play
     const audio = document.querySelector(`audio[data-key="${key}"]`);
     if (!audio) return;
+    //play audio
     audio.currentTime = 0;
     audio.play();
+    //update state
+    this.setState({ keyPosition });
   }
 
   render() {
