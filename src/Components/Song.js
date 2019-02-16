@@ -8,8 +8,12 @@ class Song extends React.Component {
   render() {
     return (
       <audio
-        //false
-        src={"/Sound/Songs/" + this.props.name.split(" ").join("_") + ".mp3"}
+        name={this.props.currentSong.name}
+        src={
+          "/Sound/Songs/" +
+          this.props.currentSong.name.split(" ").join("_") +
+          ".mp3"
+        }
       />
     );
   }

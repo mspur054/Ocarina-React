@@ -8,7 +8,6 @@ class Note extends Component {
   render() {
     return (
       <div>
-        <p>{this.props.note}</p>
         <audio
           src={"/Sound/Notes/Ocarina_" + this.props.note + ".wav"}
           data-key={this.props.dataKey}

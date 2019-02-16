@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Note from "./Note";
+import Song from "./Song";
 
 class SongManager extends Component {
   render() {
@@ -10,22 +11,25 @@ class SongManager extends Component {
     const { name, notes } = this.props.currentSong;
     return (
       <div>
-        <i className="chevron left" />
-        <div className="musicTemplate">
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          {notes.map((currentNote, index) => (
-            <Note
-              key={index}
-              note={this.props.keys[currentNote].key}
-              dataKey={currentNote}
-            />
-          ))}
+        <div className="SongManager">
+          <i className="chevron left" />
+          <div className="musicTemplate">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            {notes.map((currentNote, index) => (
+              <Note
+                key={index}
+                note={this.props.keys[currentNote].key}
+                dataKey={currentNote}
+              />
+            ))}
+          </div>
+          <i className="chevron right" />
         </div>
-        <i className="chevron right" />
         <p>{name}</p>
+        <Song currentSong={this.props.currentSong} />
       </div>
     );
   }

@@ -7,26 +7,26 @@ body {
 .App {
   margin: 0;
 }
-.songManager {
+.SongManager {
   display: flex;
-}
-padding-top: 20px {
+  padding-top: 20px;
   flex-direction: row;
 }
 hr {
 /*display: block*/
   height: 1px;
   padding: 0;
-  margin: 1em 0;
-  flex-grow: 1;
+  margin: 0.75em 0;
 }
 .musicTemplate {
-  width: 550px;
+  background-color: #0ff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 20px;
   text-align: center;
+  flex: 0 0 500px;
+  width: 500px;
 }
 .chevron::before {
   border-style: solid;
@@ -35,15 +35,12 @@ hr {
   display: inline-block;
   height: 1.5em;
   left: 0.15em;
-  position: relative;
   top: 0.15em;
   transform: rotate(-45deg);
   vertical-align: top;
   width: 1.5em;
-  flex-basis: 10%;
 }
 .chevron.right:before {
-  left: 60px;
   transform: rotate(45deg);
 }
 .chevron.bottom:before {
@@ -53,4 +50,17 @@ hr {
 .chevron.left:before {
   left: -60px;
   transform: rotate(-135deg);
+}
+.left {
+  padding-right: 1vw;
+}
+.right {
+  padding-left: 1vw;
+}
+.chevron {
+  padding-top: 15vh;
+}
+.chevron:hover {
+  color: #0b51cb;
+  cursor: pointer;
 }
