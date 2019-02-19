@@ -12,6 +12,7 @@ class Note extends Component {
           src={"/Sound/Notes/Ocarina_" + this.props.note + ".wav"}
           data-key={this.props.dataKey}
         />
+        <button className={`button-${this.props.index}`} />
       </div>
     );
   }

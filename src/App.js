@@ -29,9 +29,8 @@ class App extends Component {
   listenToKeys = event => {
     const notes = this.state.currentSong.notes;
     const keyCode = parseInt(event.keyCode);
-    // console.log(notes[this.state.keyPosition] + "  " + keyCode);
     //Check if keycode is in song, if so play sound
-    return notes[this.state.keyPosition] === keyCode //notes.includes(keyCode) && notes[this.state.keyPosition] === keyCode
+    return notes[this.state.keyPosition] === keyCode
       ? this.playKey(keyCode)
       : null; //TODO:make play bad sound and reset key
   };
@@ -43,7 +42,8 @@ class App extends Component {
 
     if (this.state.keyPosition === this.state.currentSong.notes.length - 1) {
       //play success sound and delay
-
+      const successSound = new Audio("/Sound/OOT_Song_correct.wav");
+      this.playSound(successSound, 500);
       //play song
       const audio = document.querySelector(
         `audio[name="${this.state.currentSong.name}"]`

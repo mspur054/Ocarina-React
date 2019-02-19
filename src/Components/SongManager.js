@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Note from "./Note";
 import Song from "./Song";
+import "../css/style.css";
 
 class SongManager extends Component {
   render() {
@@ -21,6 +22,7 @@ class SongManager extends Component {
             {notes.map((currentNote, index) => (
               <Note
                 key={index}
+                index={index}
                 note={this.props.keys[currentNote].key}
                 dataKey={currentNote}
               />
