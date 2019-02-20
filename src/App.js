@@ -1,21 +1,18 @@
 import React, { Component } from "react";
+import SongTemplates from "./song-templates.js";
 import logo from "./logo.svg";
 import "./App.css";
-import SongTemplates from "./song-templates.js";
+
 import SongManager from "./Components/SongManager";
 import Keys from "./constants";
 import "./css/style.css";
 
 class App extends Component {
   state = {
+    songIndex: 0,
     keyPosition: 0,
-    currentSong: null
+    currentSong: {}
   };
-
-  clickLeft() {
-    //get previous song in array
-    // let currentSong = SongTemplates[]
-  }
 
   componentDidMount() {
     document.addEventListener("keyup", this.listenToKeys, false);
@@ -24,6 +21,37 @@ class App extends Component {
     //set song
     let currentSong = SongTemplates["song1"];
     this.setState({ currentSong });
+  }
+
+  navigateSongs = val => {
+    console.log(Object.keys(SongTemplates).length);
+    let songIndex = this.state.songIndex;
+    console.log("songindex: " + songIndex);
+    if (val === "left") {
+      songIndex === 0
+        ? (songIndex = Object.keys(SongTemplates).length - 1)
+        : songIndex--;
+    } else if (val === "right") {
+      songIndex === 5 ? (songIndex = 0) : songIndex++;
+    }
+    const currentSong = SongTemplates[Object.keys(SongTemplates)[songIndex]];
+    this.setState({ songIndex, currentSong });
+  };
+
+  getCurrentSong() {
+    // const songPosition = function() {
+    console.log(Object.entries(SongTemplates));
+    const currentSong = { ...this.state.currentSong };
+    const matchIndex = Object.keys(SongTemplates).forEach(function(
+      item,
+      index
+    ) {
+      if (SongTemplates[item].name === currentSong.name) {
+        return index;
+      }
+      return index;
+    });
+    console.log(matchIndex);
   }
 
   listenToKeys = event => {
@@ -84,6 +112,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Welcome to my blog</p>
+          <button value="left" onClick={() => this.navigateSongs("left")} />
           <SongManager keys={Keys} currentSong={this.state.currentSong} />
         </header>
       </div>
