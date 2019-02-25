@@ -32,7 +32,7 @@ class App extends Component {
         ? (songIndex = Object.keys(SongTemplates).length - 1)
         : songIndex--;
     } else if (val === "right") {
-      songIndex === 5 ? (songIndex = 0) : songIndex++;
+      songIndex === 4 ? (songIndex = 0) : songIndex++;
     }
     const currentSong = SongTemplates[Object.keys(SongTemplates)[songIndex]];
     this.setState({ songIndex, currentSong });
@@ -112,9 +112,20 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Welcome to my blog</p>
-          <button value="left" onClick={() => this.navigateSongs("left")} />
-          <SongManager keys={Keys} currentSong={this.state.currentSong} />
         </header>
+        <div>
+          <button
+            className="btn chevron left"
+            value="left"
+            onClick={() => this.navigateSongs("left")}
+          />
+          <button
+            className="btn chevron right"
+            value="right"
+            onClick={() => this.navigateSongs("right")}
+          />
+          <SongManager keys={Keys} currentSong={this.state.currentSong} />
+        </div>
       </div>
     );
   }

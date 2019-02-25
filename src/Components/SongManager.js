@@ -18,10 +18,10 @@ class SongManager extends Component {
     return (
       <div>
         <div className="SongManager">
-          <i
+          {/* <i
             className="chevron left"
             onClick={() => this.props.getCurrentSong}
-          />
+          /> */}
           <div className="musicTemplate">
             <hr />
             <hr />
@@ -36,7 +36,11 @@ class SongManager extends Component {
               />
             ))}
           </div>
-          <i className="chevron right" />
+          {/* <i className="chevron right" /> */}
+          <div className="noteContainer">
+            {notes.array.forEach(element => {})}
+            <button className={`button-${this.props.index}`} />{" "}
+          </div>
         </div>
         <p>{name}</p>
         <Song currentSong={this.props.currentSong} />

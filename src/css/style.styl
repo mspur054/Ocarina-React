@@ -3,18 +3,20 @@
 
 html, body
   height:100%
-  background-color: lightblue
+  
 .App
- 
+  background: #000
   margin: 0
+
 
 
 .SongManager
   display:flex
   padding-top: 20px
   flex-direction: row
-
-
+  justify-content: center
+  flex: 1 1 auto
+  background-color: darkgrey
 hr
   /*display: block*/
   height: 1px
@@ -67,9 +69,11 @@ hr
 
 .left
   padding-right: 1vw
+  left: -300px
 
 .right
   padding-left: 1vw
+  right: -300px
 
 .chevron
   padding-top: 15vh
@@ -77,18 +81,24 @@ hr
     color: #0B51CB
     cursor: pointer
 
+.btn
+  border: none 
+  background: none
+  padding: 0
+  position: relative
+  top: 100px
+
 
 .button-0
   position: relative
-  //display: block
-  left: 50px
- // margin-left: 50px
+  padding: 0
+  right: 200px
+  top: 50px
 
 .button-1
   position: relative
-  display: block
   right: 125px
- 
+  bottom: 50px
 
 .button-2
   position: relative
@@ -105,3 +115,10 @@ hr
 .button-5
   position: relative
   right: -175px
+
+.firstline
+  bottom: 10px
+
+
+.noteContainer
+  position: absolute
