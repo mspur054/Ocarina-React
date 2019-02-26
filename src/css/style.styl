@@ -1,4 +1,5 @@
 /* @require './_*.styl' */
+@import 'mixins'
 
 
 html, body
@@ -8,8 +9,6 @@ html, body
   background: lightgrey
   margin: 0
 
-
-
 .SongManager
   display:flex
   padding-top: 20px
@@ -18,11 +17,9 @@ html, body
   flex: 1 1 auto
   background-color: darkgrey
 hr
-  /*display: block*/
   height: 1px
   padding:0
   margin: 0.75em 0 
- // flex-grow: 1
 
 .musicTemplate
   background-color: cyan
@@ -30,6 +27,7 @@ hr
   justify-content: center
   flex-direction: column
   padding-top: 20px
+  padding-bottom: 20px
   text-align: center
   flex:0 0 500px
   width: 500px
@@ -89,78 +87,31 @@ hr
   top: 100px
 
 
-.noteBtn
-  position: relative
-  width: 30px
-  height: 30px
-  text-align: center
-  border-radius: 50%
-  -moz-border-radius: 50%
-  -webkit-border-radius: 50%
-  opacity: 0.7
-  border: none
-  background: yellow
-  // left
-  &[data-key="37"] 
-    top: 43px
-    &:before
-      content:''
-      display: block
-      position: absolute
-      border-top: solid 7px transparent 
-      border-right: solid 13px #000000
-      border-bottom: solid 7px transparent
-      opacity: 1
-      top: 50%
-      left 35%
-      margin: -7px 0 0 -2px
-  //up
-  &[data-key="38"]
-    top:17px
-    &:before
-      content: ''
-      display: block
-      position: absolute
-      border-left: solid 7px transparent
-      border-right: solid 7px transparent 
-      border-bottom: solid 14px #000
-      margin: -7px 0 0 2px
-  //right
-  &[data-key="39"]
-    top:55px
-  //down
-  &[data-key="40"]
-    top: 85px
-  //A
-  &[data-key="65"]
-    top: 105px
-    background: blue
-
 .noteBtn-0
-  @extends .noteBtn
-  right: 130px
+  note-Btn()
+  right: 90px
 
 
 .noteBtn-1
-  @extends .noteBtn
-  right: 100px
-  bottom: 50px
+  note-Btn()
+  right: 50px
+ 
 
 .noteBtn-2
-  @extends .noteBtn
-  right: 50px
+  note-Btn()
+  right: 10px
 
 .noteBtn-3
-  @extends .noteBtn
-  right: -25px
+  note-Btn()
+  right: -30px
 
 .noteBtn-4
-  @extends .noteBtn
-  right: -100px
+  note-Btn()
+  right: -70px
 
 .noteBtn-5
-  @extends .noteBtn
-  right: -175px
+  note-Btn()
+  right: -110px
 
 .firstline
   bottom: 10px
