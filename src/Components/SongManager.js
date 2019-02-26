@@ -38,8 +38,13 @@ class SongManager extends Component {
           </div>
           {/* <i className="chevron right" /> */}
           <div className="noteContainer">
-            {notes.array.forEach(element => {})}
-            <button className={`button-${this.props.index}`} />{" "}
+            {notes.map((currentNote, index) => (
+              <button
+                key={index}
+                data-key={currentNote}
+                className={`noteBtn-${index}`}
+              />
+            ))}
           </div>
         </div>
         <p>{name}</p>

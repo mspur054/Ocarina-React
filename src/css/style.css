@@ -4,7 +4,7 @@ body {
   height: 100%;
 }
 .App {
-  background: #000;
+  background: #d3d3d3;
   margin: 0;
 }
 .SongManager {
@@ -76,31 +76,120 @@ hr {
   position: relative;
   top: 100px;
 }
-.button-0 {
+.noteBtn,
+.noteBtn-0,
+.noteBtn-1,
+.noteBtn-2,
+.noteBtn-3,
+.noteBtn-4,
+.noteBtn-5 {
   position: relative;
-  padding: 0;
-  right: 200px;
-  top: 50px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  opacity: 0.7;
+  border: none;
+  background: #ff0;
 }
-.button-1 {
-  position: relative;
-  right: 125px;
+.noteBtn[data-key="37"],
+.noteBtn-0[data-key="37"],
+.noteBtn-1[data-key="37"],
+.noteBtn-2[data-key="37"],
+.noteBtn-3[data-key="37"],
+.noteBtn-4[data-key="37"],
+.noteBtn-5[data-key="37"] {
+  top: 43px;
+}
+.noteBtn[data-key="37"]:before,
+.noteBtn-0[data-key="37"]:before,
+.noteBtn-1[data-key="37"]:before,
+.noteBtn-2[data-key="37"]:before,
+.noteBtn-3[data-key="37"]:before,
+.noteBtn-4[data-key="37"]:before,
+.noteBtn-5[data-key="37"]:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top: solid 7px transparent;
+  border-right: solid 13px #000;
+  border-bottom: solid 7px transparent;
+  opacity: 1;
+  top: 50%;
+  left: 35%;
+  margin: -7px 0 0 -2px;
+}
+.noteBtn[data-key="38"],
+.noteBtn-0[data-key="38"],
+.noteBtn-1[data-key="38"],
+.noteBtn-2[data-key="38"],
+.noteBtn-3[data-key="38"],
+.noteBtn-4[data-key="38"],
+.noteBtn-5[data-key="38"] {
+  top: 17px;
+}
+.noteBtn[data-key="38"]:before,
+.noteBtn-0[data-key="38"]:before,
+.noteBtn-1[data-key="38"]:before,
+.noteBtn-2[data-key="38"]:before,
+.noteBtn-3[data-key="38"]:before,
+.noteBtn-4[data-key="38"]:before,
+.noteBtn-5[data-key="38"]:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 14px #000;
+  margin: -7px 0 0 2px;
+}
+.noteBtn[data-key="39"],
+.noteBtn-0[data-key="39"],
+.noteBtn-1[data-key="39"],
+.noteBtn-2[data-key="39"],
+.noteBtn-3[data-key="39"],
+.noteBtn-4[data-key="39"],
+.noteBtn-5[data-key="39"] {
+  top: 55px;
+}
+.noteBtn[data-key="40"],
+.noteBtn-0[data-key="40"],
+.noteBtn-1[data-key="40"],
+.noteBtn-2[data-key="40"],
+.noteBtn-3[data-key="40"],
+.noteBtn-4[data-key="40"],
+.noteBtn-5[data-key="40"] {
+  top: 85px;
+}
+.noteBtn[data-key="65"],
+.noteBtn-0[data-key="65"],
+.noteBtn-1[data-key="65"],
+.noteBtn-2[data-key="65"],
+.noteBtn-3[data-key="65"],
+.noteBtn-4[data-key="65"],
+.noteBtn-5[data-key="65"] {
+  top: 105px;
+  background: #00f;
+}
+.noteBtn-0 {
+  right: 130px;
+}
+.noteBtn-1 {
+  right: 100px;
   bottom: 50px;
 }
-.button-2 {
-  position: relative;
+.noteBtn-2 {
   right: 50px;
 }
-.button-3 {
-  position: relative;
+.noteBtn-3 {
   right: -25px;
 }
-.button-4 {
-  position: relative;
+.noteBtn-4 {
   right: -100px;
 }
-.button-5 {
-  position: relative;
+.noteBtn-5 {
   right: -175px;
 }
 .firstline {

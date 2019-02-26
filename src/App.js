@@ -26,6 +26,8 @@ class App extends Component {
   navigateSongs = val => {
     console.log(Object.keys(SongTemplates).length);
     let songIndex = this.state.songIndex;
+    //Reset keys
+    let keyPosition = 0;
     console.log("songindex: " + songIndex);
     if (val === "left") {
       songIndex === 0
@@ -35,7 +37,7 @@ class App extends Component {
       songIndex === 4 ? (songIndex = 0) : songIndex++;
     }
     const currentSong = SongTemplates[Object.keys(SongTemplates)[songIndex]];
-    this.setState({ songIndex, currentSong });
+    this.setState({ keyPosition, songIndex, currentSong });
   };
 
   getCurrentSong() {
