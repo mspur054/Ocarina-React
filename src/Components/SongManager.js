@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Note from "./Note";
 import Song from "./Song";
+import NoteBtn from "./NoteBtn";
 import "../css/style.css";
 
 class SongManager extends Component {
   static propTypes = {
-    currentNote: PropTypes.object
+    currentNote: PropTypes.object,
+    keyPosition: PropTypes.number
   };
 
   render() {
@@ -18,10 +20,6 @@ class SongManager extends Component {
     return (
       <div>
         <div className="SongManager">
-          {/* <i
-            className="chevron left"
-            onClick={() => this.props.getCurrentSong}
-          /> */}
           <div className="musicTemplate">
             <hr />
             <hr />
@@ -36,18 +34,23 @@ class SongManager extends Component {
               />
             ))}
           </div>
-          {/* <i className="chevron right" /> */}
           <div className="noteContainer">
             {notes.map((currentNote, index) => (
-              <button
+              <NoteBtn
                 key={index}
-                data-key={currentNote}
+                index={index}
+                dataKey={currentNote}
                 className={`noteBtn-${index}`}
+                keyPosition={this.props.keyPosition}
               />
             ))}
           </div>
         </div>
-        <p>{name}</p>
+        <p>
+          {this.props.keyPosition === notes.length
+            ? `You Played ${name}!`
+            : `Play ${name}!`}
+        </p>
         <Song currentSong={this.props.currentSong} />
       </div>
     );

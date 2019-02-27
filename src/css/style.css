@@ -2,6 +2,7 @@
 html,
 body {
   height: 100%;
+  background: #000;
 }
 .App {
   background: #d3d3d3;
@@ -100,7 +101,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -116,8 +117,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-0[data-key="39"] {
   top: 60px;
@@ -130,7 +131,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -146,7 +147,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-0[data-key="65"] {
@@ -190,7 +191,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -206,8 +207,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-1[data-key="39"] {
   top: 60px;
@@ -220,7 +221,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -236,7 +237,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-1[data-key="65"] {
@@ -280,7 +281,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -296,8 +297,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-2[data-key="39"] {
   top: 60px;
@@ -310,7 +311,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -326,7 +327,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-2[data-key="65"] {
@@ -370,7 +371,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -386,8 +387,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-3[data-key="39"] {
   top: 60px;
@@ -400,7 +401,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -416,7 +417,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-3[data-key="65"] {
@@ -460,7 +461,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -476,8 +477,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-4[data-key="39"] {
   top: 60px;
@@ -490,7 +491,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -506,7 +507,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-4[data-key="65"] {
@@ -550,7 +551,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-right: solid 14px #000;
+  border-right: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
@@ -566,8 +567,8 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-bottom: solid 14px #000;
-  margin: -7px 0 0 -3px;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
 }
 .noteBtn-5[data-key="39"] {
   top: 60px;
@@ -580,7 +581,7 @@ hr {
   top: 50%;
   left: 35%;
   border-top: solid 8px transparent;
-  border-left: solid 14px #000;
+  border-left: solid 16px #000;
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
@@ -596,7 +597,7 @@ hr {
   left: 35%;
   border-left: solid 8px transparent;
   border-right: solid 8px transparent;
-  border-top: solid 14px #000;
+  border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
 .noteBtn-5[data-key="65"] {
@@ -621,4 +622,8 @@ hr {
 }
 .noteContainer {
   position: absolute;
+}
+.maxOpacity {
+  opacity: 1;
+  transition: 0.5s;
 }

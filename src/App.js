@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import SongTemplates from "./song-templates.js";
-import logo from "./logo.svg";
 import "./App.css";
-
 import SongManager from "./Components/SongManager";
 import Keys from "./constants";
 import "./css/style.css";
@@ -24,16 +22,16 @@ class App extends Component {
   }
 
   navigateSongs = val => {
-    console.log(Object.keys(SongTemplates).length);
     let songIndex = this.state.songIndex;
     //Reset keys
     let keyPosition = 0;
-    console.log("songindex: " + songIndex);
     if (val === "left") {
+      //move to previous index
       songIndex === 0
         ? (songIndex = Object.keys(SongTemplates).length - 1)
         : songIndex--;
     } else if (val === "right") {
+      //move to next index
       songIndex === 4 ? (songIndex = 0) : songIndex++;
     }
     const currentSong = SongTemplates[Object.keys(SongTemplates)[songIndex]];
@@ -62,15 +60,18 @@ class App extends Component {
     //Check if keycode is in song, if so play sound
     return notes[this.state.keyPosition] === keyCode
       ? this.playKey(keyCode)
-      : null; //TODO:make play bad sound and reset key
+      : this.resetKeyPosition(); //TODO:make play bad sound and reset key
   };
 
-  watchKeySequence = keyPosition => {
-    console.log(
-      this.state.keyPosition + " " + this.state.currentSong.notes.length
-    );
+  resetKeyPosition() {
+    console.log("reset");
+    let keyPosition = this.state.keyPosition;
+    keyPosition = 0;
+    this.setState({ keyPosition });
+  }
 
-    if (this.state.keyPosition === this.state.currentSong.notes.length - 1) {
+  watchKeySequence = keyPosition => {
+    if (keyPosition === this.state.currentSong.notes.length) {
       //play success sound and delay
       const successSound = new Audio("/Sound/OOT_Song_correct.wav");
       this.playSound(successSound, 500);
@@ -79,9 +80,10 @@ class App extends Component {
         `audio[name="${this.state.currentSong.name}"]`
       );
       //TODO: separate this into its own function
+      //TODO: Maybe make it such that if the song is already at the length then reset the song...
       this.playSound(audio, 1000);
       //Reset key position
-      keyPosition = 0;
+      //keyPosition = 0;
     }
     return keyPosition;
   };
@@ -112,8 +114,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Welcome to my blog</p>
+          <p>Ocarina of Time</p>
         </header>
         <div>
           <button
@@ -126,7 +127,11 @@ class App extends Component {
             value="right"
             onClick={() => this.navigateSongs("right")}
           />
-          <SongManager keys={Keys} currentSong={this.state.currentSong} />
+          <SongManager
+            keyPosition={this.state.keyPosition}
+            keys={Keys}
+            currentSong={this.state.currentSong}
+          />
         </div>
       </div>
     );
