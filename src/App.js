@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SongTemplates from "./song-templates.js";
 import SongManager from "./Components/SongManager";
 import Keys from "./constants";
+import Footer from "./Components/Footer";
 import "./css/style.css";
 
 class App extends Component {
@@ -118,6 +119,7 @@ class App extends Component {
             songIndex={this.state.songIndex}
           />
         </div>
+        <Footer />
       </div>
     );
   }

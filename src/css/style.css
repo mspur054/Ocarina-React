@@ -2,7 +2,7 @@
 html,
 body {
   height: 100%;
-  background: #000;
+  background: #111;
 }
 .App {
   margin: 0;
@@ -99,7 +99,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: 90px;
 }
 .noteBtn-1 {
@@ -112,7 +112,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: 50px;
 }
 .noteBtn-2 {
@@ -125,7 +125,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: 10px;
 }
 .noteBtn-3 {
@@ -138,7 +138,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: -30px;
 }
 .noteBtn-4 {
@@ -151,7 +151,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: -70px;
 }
 .noteBtn-5 {
@@ -164,7 +164,7 @@ hr {
   -webkit-border-radius: 50%;
   opacity: 0.5;
   border: none;
-  background: #ff0;
+  background: #ffff6b;
   right: -110px;
 }
 .firstline {
@@ -239,7 +239,7 @@ hr {
 }
 .noteBtn-aKey {
   top: 110px;
-  background: #00f !important;
+  background: #2756d7 !important;
 }
 .noteBtn-aKey:before {
   content: '';
@@ -251,7 +251,7 @@ hr {
   content: 'A';
   text-align: center;
   color: #fff;
-  background: #00f;
+  background: #2756d7;
   margin: -20% 0 0 0;
 }
 .song-title {
@@ -275,4 +275,14 @@ hr {
 }
 .time {
   color: #a827d7;
+}
+footer {
+  margin-top: 5%;
+  text-align: center;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: calc(5px + 1vmin);
+}
+footer p:first-child {
+  font-size: calc(10px + 1vmin) !important;
 }
