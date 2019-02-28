@@ -1,5 +1,6 @@
 /* @require './_*.styl' */
 @import 'mixins'
+@import 'variables'
 
 
 html, body
@@ -124,3 +125,29 @@ hr
 .maxOpacity
   opacity: 1
   transition: 0.5s
+
+.noteBtn-left
+  top: 45px
+  &:before
+    note-icon('left')
+
+.noteBtn-right
+  top:60px
+  &:before
+    note-icon('right')
+
+.noteBtn-up
+  top:17px
+  &:before
+    note-icon('up')
+
+.noteBtn-down
+  top: 85px
+  &:before
+    note-icon('down')
+
+.noteBtn-aKey
+  top: 110px
+  background: blue !important
+  &:before
+    note-icon('aKey')

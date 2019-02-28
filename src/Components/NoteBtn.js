@@ -10,15 +10,25 @@ class NoteBtn extends React.Component {
   };
 
   render() {
-    return (
-      <button
-        //value="1"
-        data-key={this.props.dataKey}
-        className={`noteBtn-${this.props.index} ${
-          this.props.keyPosition > this.props.index ? "maxOpacity" : ""
-        }`}
-      />
-    );
+    let className = `noteBtn-${this.props.index} ${
+      //if the key has been played make it solid
+      this.props.keyPosition > this.props.index ? "maxOpacity" : ""
+    }`;
+
+    //Pass in keypad icon
+    if (this.props.dataKey === 37) {
+      className += " noteBtn-left";
+    } else if (this.props.dataKey === 38) {
+      className += " noteBtn-up";
+    } else if (this.props.dataKey === 39) {
+      className += " noteBtn-right";
+    } else if (this.props.dataKey === 40) {
+      className += " noteBtn-down";
+    } else if (this.props.dataKey === 65) {
+      className += " noteBtn-aKey";
+    }
+
+    return <button data-key={this.props.dataKey} className={className} />;
   }
 }
 

@@ -90,83 +90,6 @@ hr {
   background: #ff0;
   right: 90px;
 }
-.noteBtn-0[data-key="37"] {
-  top: 45px;
-}
-.noteBtn-0[data-key="37"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-right: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 -4px;
-}
-.noteBtn-0[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-0[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-0[data-key="39"] {
-  top: 60px;
-}
-.noteBtn-0[data-key="39"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-left: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 0px;
-}
-.noteBtn-0[data-key="40"] {
-  top: 85px;
-}
-.noteBtn-0[data-key="40"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-top: solid 16px #000;
-  margin: -5px 0 0 -3px;
-}
-.noteBtn-0[data-key="65"] {
-  top: 110px;
-  background: #00f;
-}
-.noteBtn-0[data-key="65"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  content: 'A';
-  text-align: center;
-  color: #fff;
-  background: #00f;
-  margin: -20% 0 0 0;
-}
 .noteBtn-1 {
   position: relative;
   width: 30px;
@@ -179,83 +102,6 @@ hr {
   border: none;
   background: #ff0;
   right: 50px;
-}
-.noteBtn-1[data-key="37"] {
-  top: 45px;
-}
-.noteBtn-1[data-key="37"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-right: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 -4px;
-}
-.noteBtn-1[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-1[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-1[data-key="39"] {
-  top: 60px;
-}
-.noteBtn-1[data-key="39"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-left: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 0px;
-}
-.noteBtn-1[data-key="40"] {
-  top: 85px;
-}
-.noteBtn-1[data-key="40"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-top: solid 16px #000;
-  margin: -5px 0 0 -3px;
-}
-.noteBtn-1[data-key="65"] {
-  top: 110px;
-  background: #00f;
-}
-.noteBtn-1[data-key="65"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  content: 'A';
-  text-align: center;
-  color: #fff;
-  background: #00f;
-  margin: -20% 0 0 0;
 }
 .noteBtn-2 {
   position: relative;
@@ -270,83 +116,6 @@ hr {
   background: #ff0;
   right: 10px;
 }
-.noteBtn-2[data-key="37"] {
-  top: 45px;
-}
-.noteBtn-2[data-key="37"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-right: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 -4px;
-}
-.noteBtn-2[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-2[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-2[data-key="39"] {
-  top: 60px;
-}
-.noteBtn-2[data-key="39"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-left: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 0px;
-}
-.noteBtn-2[data-key="40"] {
-  top: 85px;
-}
-.noteBtn-2[data-key="40"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-top: solid 16px #000;
-  margin: -5px 0 0 -3px;
-}
-.noteBtn-2[data-key="65"] {
-  top: 110px;
-  background: #00f;
-}
-.noteBtn-2[data-key="65"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  content: 'A';
-  text-align: center;
-  color: #fff;
-  background: #00f;
-  margin: -20% 0 0 0;
-}
 .noteBtn-3 {
   position: relative;
   width: 30px;
@@ -359,83 +128,6 @@ hr {
   border: none;
   background: #ff0;
   right: -30px;
-}
-.noteBtn-3[data-key="37"] {
-  top: 45px;
-}
-.noteBtn-3[data-key="37"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-right: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 -4px;
-}
-.noteBtn-3[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-3[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-3[data-key="39"] {
-  top: 60px;
-}
-.noteBtn-3[data-key="39"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-left: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 0px;
-}
-.noteBtn-3[data-key="40"] {
-  top: 85px;
-}
-.noteBtn-3[data-key="40"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-top: solid 16px #000;
-  margin: -5px 0 0 -3px;
-}
-.noteBtn-3[data-key="65"] {
-  top: 110px;
-  background: #00f;
-}
-.noteBtn-3[data-key="65"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  content: 'A';
-  text-align: center;
-  color: #fff;
-  background: #00f;
-  margin: -20% 0 0 0;
 }
 .noteBtn-4 {
   position: relative;
@@ -450,83 +142,6 @@ hr {
   background: #ff0;
   right: -70px;
 }
-.noteBtn-4[data-key="37"] {
-  top: 45px;
-}
-.noteBtn-4[data-key="37"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-right: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 -4px;
-}
-.noteBtn-4[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-4[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-4[data-key="39"] {
-  top: 60px;
-}
-.noteBtn-4[data-key="39"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-top: solid 8px transparent;
-  border-left: solid 16px #000;
-  border-bottom: solid 8px transparent;
-  margin: -7px 0 0 0px;
-}
-.noteBtn-4[data-key="40"] {
-  top: 85px;
-}
-.noteBtn-4[data-key="40"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-top: solid 16px #000;
-  margin: -5px 0 0 -3px;
-}
-.noteBtn-4[data-key="65"] {
-  top: 110px;
-  background: #00f;
-}
-.noteBtn-4[data-key="65"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  content: 'A';
-  text-align: center;
-  color: #fff;
-  background: #00f;
-  margin: -20% 0 0 0;
-}
 .noteBtn-5 {
   position: relative;
   width: 30px;
@@ -540,10 +155,20 @@ hr {
   background: #ff0;
   right: -110px;
 }
-.noteBtn-5[data-key="37"] {
+.firstline {
+  bottom: 10px;
+}
+.noteContainer {
+  position: absolute;
+}
+.maxOpacity {
+  opacity: 1;
+  transition: 0.5s;
+}
+.noteBtn-left {
   top: 45px;
 }
-.noteBtn-5[data-key="37"]:before {
+.noteBtn-left:before {
   content: '';
   display: block;
   position: absolute;
@@ -555,25 +180,10 @@ hr {
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 -4px;
 }
-.noteBtn-5[data-key="38"] {
-  top: 17px;
-}
-.noteBtn-5[data-key="38"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: 0.7;
-  top: 50%;
-  left: 35%;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  border-bottom: solid 16px #000;
-  margin: -9px 0 0 -3px;
-}
-.noteBtn-5[data-key="39"] {
+.noteBtn-right {
   top: 60px;
 }
-.noteBtn-5[data-key="39"]:before {
+.noteBtn-right:before {
   content: '';
   display: block;
   position: absolute;
@@ -585,10 +195,25 @@ hr {
   border-bottom: solid 8px transparent;
   margin: -7px 0 0 0px;
 }
-.noteBtn-5[data-key="40"] {
+.noteBtn-up {
+  top: 17px;
+}
+.noteBtn-up:before {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.7;
+  top: 50%;
+  left: 35%;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  border-bottom: solid 16px #000;
+  margin: -9px 0 0 -3px;
+}
+.noteBtn-down {
   top: 85px;
 }
-.noteBtn-5[data-key="40"]:before {
+.noteBtn-down:before {
   content: '';
   display: block;
   position: absolute;
@@ -600,11 +225,11 @@ hr {
   border-top: solid 16px #000;
   margin: -5px 0 0 -3px;
 }
-.noteBtn-5[data-key="65"] {
+.noteBtn-aKey {
   top: 110px;
-  background: #00f;
+  background: #00f !important;
 }
-.noteBtn-5[data-key="65"]:before {
+.noteBtn-aKey:before {
   content: '';
   display: block;
   position: absolute;
@@ -616,14 +241,4 @@ hr {
   color: #fff;
   background: #00f;
   margin: -20% 0 0 0;
-}
-.firstline {
-  bottom: 10px;
-}
-.noteContainer {
-  position: absolute;
-}
-.maxOpacity {
-  opacity: 1;
-  transition: 0.5s;
 }
