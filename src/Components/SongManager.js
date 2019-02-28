@@ -16,6 +16,19 @@ class SongManager extends Component {
       return <p>No song</p>;
     }
 
+    let songClass = "song-title";
+    if (this.props.songIndex === 0) {
+      songClass += " zelda";
+    } else if (this.props.songIndex === 1) {
+      songClass += " saria";
+    } else if (this.props.songIndex === 2) {
+      songClass += " epona";
+    } else if (this.props.songIndex === 3) {
+      songClass += " sun";
+    } else if (this.props.songIndex === 4) {
+      songClass += " time";
+    }
+
     const { name, notes } = this.props.currentSong;
     return (
       <div>
@@ -46,11 +59,10 @@ class SongManager extends Component {
             ))}
           </div>
         </div>
-        <p>
-          {this.props.keyPosition === notes.length
-            ? `You Played ${name}!`
-            : `Play ${name}!`}
-        </p>
+        <span className="title">
+          {this.props.keyPosition === notes.length ? "You Played " : "Play "}
+        </span>
+        <span className={songClass}>{name}!</span>
         <Song currentSong={this.props.currentSong} />
       </div>
     );

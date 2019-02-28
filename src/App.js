@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SongTemplates from "./song-templates.js";
-import "./App.css";
 import SongManager from "./Components/SongManager";
 import Keys from "./constants";
 import "./css/style.css";
@@ -38,33 +37,17 @@ class App extends Component {
     this.setState({ keyPosition, songIndex, currentSong });
   };
 
-  getCurrentSong() {
-    // const songPosition = function() {
-    console.log(Object.entries(SongTemplates));
-    const currentSong = { ...this.state.currentSong };
-    const matchIndex = Object.keys(SongTemplates).forEach(function(
-      item,
-      index
-    ) {
-      if (SongTemplates[item].name === currentSong.name) {
-        return index;
-      }
-      return index;
-    });
-    console.log(matchIndex);
-  }
-
   listenToKeys = event => {
     const notes = this.state.currentSong.notes;
     const keyCode = parseInt(event.keyCode);
-    //Check if keycode is in song, if so play sound
+    //Check if keycode is in song, if so play sound, otherwise reset key position
     return notes[this.state.keyPosition] === keyCode
       ? this.playKey(keyCode)
-      : this.resetKeyPosition(); //TODO:make play bad sound and reset key
+      : this.resetKeyPosition();
   };
 
   resetKeyPosition() {
-    console.log("reset");
+    //Resets keyPosition in state
     let keyPosition = this.state.keyPosition;
     keyPosition = 0;
     this.setState({ keyPosition });
@@ -89,7 +72,7 @@ class App extends Component {
   };
 
   playSound = (audio, delay) => {
-    //Plays a given sound given an audio element
+    //Plays a given sound given an audio element, delay as needed
     if (!audio) return;
     setTimeout(function() {
       audio.currentTime = 0;
@@ -105,6 +88,7 @@ class App extends Component {
     if (!audio) return;
     //play audio
     this.playSound(audio, 50);
+    //TODO: this doesn't need to be an assignment function anymore...
     keyPosition = this.watchKeySequence(keyPosition);
     //update state
     this.setState({ keyPosition });
@@ -131,6 +115,7 @@ class App extends Component {
             keyPosition={this.state.keyPosition}
             keys={Keys}
             currentSong={this.state.currentSong}
+            songIndex={this.state.songIndex}
           />
         </div>
       </div>

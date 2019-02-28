@@ -5,8 +5,21 @@ body {
   background: #000;
 }
 .App {
-  background: #d3d3d3;
   margin: 0;
+  text-align: center;
+  color: #f4c242;
+  font-family: Georgia, serif;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(50px + 2vmin);
+  color: #fff;
+  font-family: Georgia, serif;
 }
 .SongManager {
   display: flex;
@@ -14,7 +27,6 @@ body {
   flex-direction: row;
   justify-content: center;
   flex: 1 1 auto;
-  background-color: #a9a9a9;
 }
 hr {
   height: 1px;
@@ -22,7 +34,6 @@ hr {
   margin: 0.75em 0;
 }
 .musicTemplate {
-  background-color: #0ff;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -64,6 +75,7 @@ hr {
   right: -300px;
 }
 .chevron {
+  color: #f4c242;
   padding-top: 15vh;
 }
 .chevron:hover {
@@ -85,7 +97,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: 90px;
@@ -98,7 +110,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: 50px;
@@ -111,7 +123,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: 10px;
@@ -124,7 +136,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: -30px;
@@ -137,7 +149,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: -70px;
@@ -150,7 +162,7 @@ hr {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
   border: none;
   background: #ff0;
   right: -110px;
@@ -241,4 +253,26 @@ hr {
   color: #fff;
   background: #00f;
   margin: -20% 0 0 0;
+}
+.song-title {
+  color: #45bde2;
+  font-size: calc(15px + 2vmin);
+}
+.title {
+  font-size: calc(15px + 2vmin);
+}
+.zelda {
+  color: #45bde2;
+}
+.saria {
+  color: #45e26a;
+}
+.epona {
+  color: #e26a45;
+}
+.sun {
+  color: #ddb64a;
+}
+.time {
+  color: #a827d7;
 }
