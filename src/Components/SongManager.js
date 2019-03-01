@@ -8,7 +8,8 @@ import "../css/style.css";
 class SongManager extends Component {
   static propTypes = {
     currentNote: PropTypes.object,
-    keyPosition: PropTypes.number
+    keyPosition: PropTypes.number,
+    songIndex: PropTypes.number
   };
 
   render() {

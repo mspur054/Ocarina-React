@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SongTemplates from "./song-templates.js";
+import SongTemplates from "./song-templates.1.js";
 import SongManager from "./Components/SongManager";
 import Keys from "./constants";
 import Footer from "./Components/Footer";
@@ -14,10 +14,8 @@ class App extends Component {
 
   componentDidMount() {
     document.addEventListener("keyup", this.listenToKeys, false);
-    //copy currentSong from state
-    console.log("MOuNTED");
     //set song
-    let currentSong = SongTemplates["song1"];
+    let currentSong = SongTemplates[0];
     this.setState({ currentSong });
   }
 
@@ -25,16 +23,17 @@ class App extends Component {
     let songIndex = this.state.songIndex;
     //Reset keys
     let keyPosition = 0;
+
     if (val === "left") {
       //move to previous index
-      songIndex === 0
-        ? (songIndex = Object.keys(SongTemplates).length - 1)
-        : songIndex--;
+      songIndex === 0 ? (songIndex = SongTemplates.length - 1) : songIndex--;
     } else if (val === "right") {
       //move to next index
-      songIndex === 4 ? (songIndex = 0) : songIndex++;
+      songIndex === SongTemplates.length - 1 ? (songIndex = 0) : songIndex++;
     }
-    const currentSong = SongTemplates[Object.keys(SongTemplates)[songIndex]];
+    const navSound = new Audio("/Sound/OOT_PauseMenu_Turn_Right.wav");
+    this.playSound(navSound);
+    const currentSong = SongTemplates[songIndex];
     this.setState({ keyPosition, songIndex, currentSong });
   };
 
@@ -55,21 +54,15 @@ class App extends Component {
   }
 
   watchKeySequence = keyPosition => {
-    if (keyPosition === this.state.currentSong.notes.length) {
+    const cSong = this.state.currentSong;
+    if (keyPosition === cSong.notes.length) {
       //play success sound and delay
       const successSound = new Audio("/Sound/OOT_Song_correct.wav");
       this.playSound(successSound, 500);
       //play song
-      const audio = document.querySelector(
-        `audio[name="${this.state.currentSong.name}"]`
-      );
-      //TODO: separate this into its own function
-      //TODO: Maybe make it such that if the song is already at the length then reset the song...
+      const audio = document.querySelector(`audio[name="${cSong.name}"]`);
       this.playSound(audio, 1000);
-      //Reset key position
-      //keyPosition = 0;
     }
-    return keyPosition;
   };
 
   playSound = (audio, delay) => {
@@ -89,8 +82,8 @@ class App extends Component {
     if (!audio) return;
     //play audio
     this.playSound(audio, 50);
-    //TODO: this doesn't need to be an assignment function anymore...
-    keyPosition = this.watchKeySequence(keyPosition);
+    //keep an eye on if the sequence is completed
+    this.watchKeySequence(keyPosition);
     //update state
     this.setState({ keyPosition });
   }
