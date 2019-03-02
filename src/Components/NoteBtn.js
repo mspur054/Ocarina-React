@@ -10,9 +10,9 @@ class NoteBtn extends React.Component {
   };
 
   render() {
-    let className = `noteBtn-${this.props.index} ${
+    let className = `noteBtn${
       //if the key has been played make it solid
-      this.props.keyPosition > this.props.index ? "maxOpacity" : ""
+      this.props.keyPosition > this.props.index ? " maxOpacity" : ""
     }`;
 
     //Pass in keypad icon

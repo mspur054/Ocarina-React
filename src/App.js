@@ -22,8 +22,15 @@ class App extends Component {
   navigateSongs = val => {
     let songIndex = this.state.songIndex;
     //Reset keys
-    let keyPosition = 0;
-
+    this.resetKeyPosition();
+    //Get the current audio for the current song
+    const currentAudio = document.querySelector(
+      `audio[name="${this.state.currentSong.name}"]`
+    );
+    //stop it if it is playing
+    if (currentAudio) {
+      currentAudio.pause();
+    }
     if (val === "left") {
       //move to previous index
       songIndex === 0 ? (songIndex = SongTemplates.length - 1) : songIndex--;
@@ -34,7 +41,7 @@ class App extends Component {
     const navSound = new Audio("/Sound/OOT_PauseMenu_Turn_Right.wav");
     this.playSound(navSound);
     const currentSong = SongTemplates[songIndex];
-    this.setState({ keyPosition, songIndex, currentSong });
+    this.setState({ songIndex, currentSong });
   };
 
   listenToKeys = event => {
@@ -50,6 +57,7 @@ class App extends Component {
     //Resets keyPosition in state
     let keyPosition = this.state.keyPosition;
     keyPosition = 0;
+    //stop all audio
     this.setState({ keyPosition });
   }
 

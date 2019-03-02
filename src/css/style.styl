@@ -103,32 +103,35 @@ hr
   top: 100px
 
 
+.noteBtn
+  note-Btn()
+
 .noteBtn-0
   note-Btn()
-  right: 90px
+  
 
 
 .noteBtn-1
   note-Btn()
-  right: 50px
+  
  
 
 .noteBtn-2
   note-Btn()
-  right: 10px
+ 
   
 
 .noteBtn-3
   note-Btn()
-  right: -30px
+  
 
 .noteBtn-4
   note-Btn()
-  right: -70px
+  
 
 .noteBtn-5
   note-Btn()
-  right: -110px
+  
 
 .firstline
   bottom: 10px
@@ -136,33 +139,41 @@ hr
 
 .noteContainer
   position: absolute
+  display: grid
+  width: 500px
+  padding-left: 100px
+  grid-template-columns: repeat(8, 20px)
+  grid-gap: 30px
+
+.noteContainer > .note-Btn
+
 
 .maxOpacity
   opacity: 1
   transition: 0.5s
 
 .noteBtn-left
-  top: 45px
+  margin-top: 45px
   &:before
     note-icon('left')
 
 .noteBtn-right
-  top:60px
+  margin-top:60px
   &:before
     note-icon('right')
 
 .noteBtn-up
-  top:17px
+  margin-top:17px
   &:before
     note-icon('up')
 
 .noteBtn-down
-  top: 85px
+  margin-top: 85px
   &:before
     note-icon('down')
 
 .noteBtn-aKey
-  top: 110px
+  margin-top: 110px
   background: #2756D7 !important
   &:before
     note-icon('aKey')

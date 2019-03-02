@@ -20,9 +20,9 @@ class SongManager extends Component {
     let songClass = "song-title";
     if (this.props.songIndex === 0) {
       songClass += " zelda";
-    } else if (this.props.songIndex === 1) {
+    } else if ([1, 6].includes(this.props.songIndex)) {
       songClass += " saria";
-    } else if (this.props.songIndex === 2) {
+    } else if ([2, 7].includes(this.props.songIndex)) {
       songClass += " epona";
     } else if (this.props.songIndex === 3) {
       songClass += " sun";
@@ -54,7 +54,8 @@ class SongManager extends Component {
                 key={index}
                 index={index}
                 dataKey={currentNote}
-                className={`noteBtn-${index}`}
+                //className={`noteBtn-${index}`}
+                className="noteBtn"
                 keyPosition={this.props.keyPosition}
               />
             ))}

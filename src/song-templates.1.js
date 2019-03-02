@@ -22,6 +22,14 @@ const songs = [
   {
     name: "Song of Storms",
     notes: [65, 40, 38, 65, 40, 38]
+  },
+  {
+    name: "Minuet of Forest",
+    notes: [65, 38, 37, 39, 37, 39]
+  },
+  {
+    name: "Bolero of Fire",
+    notes: [40, 65, 40, 65, 39, 40, 39, 40]
   }
 ];
 
