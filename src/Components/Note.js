@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-class Note extends Component {
-  static propTypes = {
-    note: PropTypes.string
+const Note = ({ note, dataKey }) => {
+  Note.propTypes = {
+    note: PropTypes.string,
+    dataKey: PropTypes.number
   };
-  render() {
-    return (
-      <div>
-        <audio
-          src={"/Sound/Notes/Ocarina_" + this.props.note + ".wav"}
-          data-key={this.props.dataKey}
-        />
-      </div>
-    );
-  }
-}
+
+  return (
+    <div>
+      <audio src={"/Sound/Notes/Ocarina_" + note + ".wav"} data-key={dataKey} />
+    </div>
+  );
+};
 
 export default Note;

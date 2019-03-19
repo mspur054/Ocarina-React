@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class NoteBtn extends React.Component {
-  state = {
-    played: false
-  };
+  //TODO: convert to function component
   static propTypes = {
     "data-key": PropTypes.number
   };
